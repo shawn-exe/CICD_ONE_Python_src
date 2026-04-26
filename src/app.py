@@ -8,7 +8,7 @@ def info():
     return jsonify({
         'time': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
         'hostname': socket.gethostname(),
-        'env': 'test-dev'
+        'env': 'dev-env'
     })
 
 @app.route('/api/v1/healthz')
